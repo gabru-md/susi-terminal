@@ -23,6 +23,10 @@ if(args.q){
 			console.log(err);
 		}else{
 			var JSONResponse = JSON.parse(data);
+			if(!JSONResponse.answers[0]){
+				console.log(chalk.yellow('susi.ai > ') + chalk.red('No valid response found'));
+				return;
+			}
 			var metaData = JSONResponse.answers[0].data;
 			var data = JSONResponse.answers[0].actions;
 			var dataType = data[data.length - 1].type;
