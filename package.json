@@ -27,6 +27,7 @@
   "homepage": "https://github.com/gabru-md/susi-terminal#readme",
   "dependencies": {
     "argparse": "^1.0.9",
+    "chalk": "^2.3.0",
     "cheerio": "^1.0.0-rc.2"
   }
 }
