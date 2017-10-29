@@ -5,6 +5,16 @@ It uses `SUSI.AI` as it's primary personal assistant.
 
 A Complete Personal Assistant using SUSI.AI . Written in NODE.JS
 
-## Author
+## REQUIREMENTS
+
+- `NodeJS`
+- `npm`
+
+## INSTALLATION
+
+- `npm install -g`
+
+## CONTRIBUTORS
 
 Manish Devgan
+Mohit Sharma
