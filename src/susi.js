@@ -29,19 +29,26 @@ if(args.q){
 			}
 			var metaData = JSONResponse.answers[0].data;
 			var data = JSONResponse.answers[0].actions;
-			var dataType = data[data.length - 1].type;
-
-			if(dataType === 'table' ){
-					console.log(chalk.yellow('susi.ai > '));
-					responses.TableReponse(data,metaData,(response)=>{
-						console.log(response.toString());
+			//var dataType = data[data.length - 1].type;
+			for(var dataType = 0;dataType < data.length; dataType++)
+			{ 
+				if(data[dataType].type === 'table' ){
+						console.log(chalk.yellow('susi.ai > '));
+						responses.TableReponse(data[dataType],metaData,(response)=>{
+							console.log(response.toString());
+						})
+					}
+				else if(data[dataType].type === 'answer'){
+					responses.AnswerResponse(data[dataType],(response)=>{
+						console.log(chalk.yellow('susi.ai > ') + response);
 					})
 				}
-			else if(dataType === 'answer'){
-				responses.AnswerResponse(data,(response)=>{
-					console.log(chalk.yellow('susi.ai > ') + response);
-				})
-			}
+				else if(data[dataType].type === 'anchor'){
+					responses.LinkResponse(data[dataType],(response)=>{
+						console.log(chalk.yellow('susi.ai > ') + response);
+					})			
+				}
+				}
 		}
 	})
 }else if(args.search){

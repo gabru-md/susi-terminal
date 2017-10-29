@@ -6,7 +6,7 @@ const chalk = require('chalk');
 
 module.exports = {
 	TableReponse : function(data,metaData,callback){
-					var cols = data[data.length - 1].columns;
+					var cols = data.columns;
 					var headers = [];
 					var keys = Object.keys(cols);
 					keys.map((key)=>{
@@ -25,8 +25,12 @@ module.exports = {
 					}
 					callback(table);
 				},
-	AnswerResponse : function (data,callback){
-					var answer = data[0].expression;
+	AnswerResponse : function (data, callback){
+					var answer = data.expression;
 					callback(answer);
-				}
+				},
+	LinkResponse : function (data, callback){
+					var answer = data.link;
+					callback(answer);
+				}	
 }
