@@ -25,16 +25,9 @@ parser.addArgument(
 );
 
 parser.addArgument(
-	['-config'],
-	{
-		help : 'Sets config.js for you',
-		required : false
-	}
-);
-parser.addArgument(
 	['-play'],
 	{
-		help : 'Song Name from you Musi Folder',
+		help : 'Song Name from you Music Folder',
 		required : false
 	}
 )

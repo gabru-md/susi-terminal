@@ -6,7 +6,6 @@ const Table = require('cli-table');
 const path = require('path');
 const args = require('./parser');
 const responses = require('./responses');
-const setConfig = require('./setConfig');
 const music = require('./music');
 
 function callSUSI(req,callback){
@@ -63,9 +62,6 @@ else if(args.search){
 			console.log(chalk.yellow('susi.ai > ') + JSONResponse.answers[0].actions[0].expression);
 		}
 	})
-}
-else if(args.config){
-	setConfig.setConfig(args.config);
 }
 else if(args.play){
 	music.playSong(args.play);
