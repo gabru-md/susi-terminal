@@ -13,8 +13,12 @@ module.exports = {
 						headers.push(cols[key]);
 					})
 					var table = new Table({
+						chars: { 'top': '═' , 'top-mid': '╤' , 'top-left': '╔' , 'top-right': '╗'
+         , 'bottom': '═' , 'bottom-mid': '╧' , 'bottom-left': '╚' , 'bottom-right': '╝'
+         , 'left': '║' , 'left-mid': '╟' , 'mid': '-' , 'mid-mid': '┼'
+         , 'right': '║' , 'right-mid': '╢' , 'middle': '│' },
 						head : headers,
-						colWidths : [20,5,20]
+						colWidths : [20,10,20]
 					})
 					for(var i = 0; i < metaData.length ; i++){
 						var content = [];
