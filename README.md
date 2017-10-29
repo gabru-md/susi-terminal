@@ -1,28 +1,31 @@
 # susi-terminal
 
 For the terminal freaks who want everything done from terminal.
-It uses `SUSI.AI` as it's primary personal assistant.
+It uses [SUSI.AI](https://susi.ai/) as it's primary personal assistant.
 
-A Complete Personal Assistant using SUSI.AI . Written in NODE.JS
+A Complete Personal Assistant using SUSI.AI . Written in Node.JS
 
 ## REQUIREMENTS
 
-- `NodeJS`
-- `npm`
+- [NodeJS](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com)
 
 ## INSTALLATION
 
-- `npm install -g`
+```
+sudo apt-get install sox libsox-fmt-mp3    
+sudo npm install -g
+```
 
-### Set up Music Folder
+### Playing Music
 
-- Set up a folder where you want
-- `susi -config "FOLDERPATH" `
 - To play Music 
-- `susi -play SONGNAME `
-- Done
+- It will ask you to keep the music files in `/home/_your-username/susi.ai/music`
+- If the folder is not created susi will automatically create one.
+- `susi -play "SONGNAME"`
+- Enjoy the music :musical_note:
 
 ## CONTRIBUTORS
 
-Manish Devgan
-Mohit Sharma
+- [Manish Devgan](https://github.com/gabru-md)    
+- [Mohit Sharma](https://github.com/ms10398)
