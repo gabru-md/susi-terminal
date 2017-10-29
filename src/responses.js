@@ -30,7 +30,8 @@ module.exports = {
 					callback(answer);
 				},
 	LinkResponse : function (data, callback){
-					var answer = data.link;
+					var answer = data.text;
+					answer = answer + " " + data.link;
 					callback(answer);
 				}	
 }
