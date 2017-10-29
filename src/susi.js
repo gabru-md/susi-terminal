@@ -4,6 +4,7 @@ const request = require('request');
 const chalk = require('chalk');
 const Table = require('cli-table');
 const path = require('path');
+const description = require('./description');
 const args = require('./parser');
 const responses = require('./responses');
 const music = require('./music');
@@ -65,4 +66,7 @@ else if(args.search){
 }
 else if(args.play){
 	music.playSong(args.play);
+}
+else {
+    description.desc();
 }
