@@ -21,7 +21,7 @@ module.exports = {
 						if(S(items[i]).contains(songname)){
 							console.log(chalk.yellow('susi.ai > ') + 'Playing ' + chalk.blue(items[i]));
 							console.log(chalk.yellow('susi.ai > ') + 'Press Ctrl + C to stop.');
-							return exec("play " + path.join(music,items[i]),function(err,stdout,stderr){
+							return exec("play '" + path.join(music,items[i]) + "'",function(err,stdout,stderr){
 								if(err){
 									console.log(err);
 								}else{
