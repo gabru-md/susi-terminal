@@ -14,6 +14,14 @@ A Complete Personal Assistant using SUSI.AI . Written in NODE.JS
 
 - `npm install -g`
 
+### Set up Music Folder
+
+- Set up a folder where you want
+- `susi -config "FOLDERPATH" `
+- To play Music 
+- `susi -play SONGNAME `
+- Done
+
 ## CONTRIBUTORS
 
 Manish Devgan

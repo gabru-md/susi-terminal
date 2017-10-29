@@ -6,7 +6,8 @@ const Table = require('cli-table');
 const path = require('path');
 const args = require('./parser');
 const responses = require('./responses');
-
+const setConfig = require('./setConfig');
+const music = require('./music');
 
 function callSUSI(req,callback){
 	let api = 'https://api.susi.ai/susi/chat.json?q='
@@ -51,7 +52,8 @@ if(args.q){
 				}
 		}
 	})
-}else if(args.search){
+}
+else if(args.search){
 	var req = 'search for ';
 	callSUSI(req + args.search,function(err,data){
 		if(err){
@@ -61,4 +63,10 @@ if(args.q){
 			console.log(chalk.yellow('susi.ai > ') + JSONResponse.answers[0].actions[0].expression);
 		}
 	})
+}
+else if(args.config){
+	setConfig.setConfig(args.config);
+}
+else if(args.play){
+	music.playSong(args.play);
 }
