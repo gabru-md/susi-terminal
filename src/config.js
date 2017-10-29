@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
 module.exports = {
-	musicfolder : "~/Music"
+	musicfolder : "YOUR MUSIC FOLDER HERE"
 }
