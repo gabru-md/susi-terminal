@@ -3,7 +3,14 @@
 For the terminal freaks who want everything done from terminal.
 It uses [SUSI.AI](https://susi.ai/) as it's primary personal assistant.
 
-A Complete Personal Assistant using SUSI.AI . Written in Node.JS
+## Why SUSI-Terminal?
+
+SUSI is an intelligent Open Source AI that is built to do several tasks.
+Using SUSI.AI's API and the power of Node.JS we try to built a powerful 
+personal assistant for Linux. This assistant will be capable of doing several 
+tasks. Searching , Quering and Playing Music are just some of them.
+
+`A Complete Personal Assistant using SUSI.AI . Written in Node.JS`
 
 ## REQUIREMENTS
 
