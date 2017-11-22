@@ -30,7 +30,15 @@ parser.addArgument(
 		help : 'Song Name from you Music Folder',
 		required : false
 	}
-)
+);
+
+parser.addArgument(
+	['-extract'],
+	{
+		help : 'Extracts .tar.gz/.zip for you',
+		required : false
+	}
+);
 
 var args = parser.parseArgs();
 

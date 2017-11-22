@@ -8,6 +8,7 @@ const description = require('./description');
 const args = require('./parser');
 const responses = require('./responses');
 const music = require('./music');
+const extract = require('./extract');
 
 function callSUSI(req,callback){
 	let api = 'https://api.susi.ai/susi/chat.json?q='
@@ -66,6 +67,9 @@ else if(args.search){
 }
 else if(args.play){
 	music.playSong(args.play);
+}
+else if(args.extract){
+	extract.extract(args.extract);
 }
 else {
     description.desc();
