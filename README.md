@@ -1,3 +1,7 @@
+
+Ashwamedh chod de madarchodh, maa chod denge teri
+                                        - pappu & joker
+
 # susi-terminal
 
 For the terminal freaks who want everything done from terminal.
